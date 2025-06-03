@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Water Network</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://js.arcgis.com/4.32/"></script>
+        <link rel ="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="dropdown">
+          <label for="layerSelect">Render By:</label>
+          <select id="layerSelect">
+          <option value="" selected disabled>Select Type</option>
+          <option value="Material">Material</option>
+          <option value="Diameter">Diameter</option>
+          </select>
+          </div>
+          <!-- Chart container inside an Esri Expand widget -->
+        <div id="chartContainer" style="display:none;">
+          <canvas id="pieChart" width="200" height="200"></canvas>
+        </div>
+
+        <div id="viewDiv"></div>
+        <script src="script.js"></script>
+
+        
+    </body>
+</html>

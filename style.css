@@ -1,0 +1,21 @@
+html, body, #viewDiv {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+#dropdown{
+      position: absolute;
+      top: 20px;
+      left: 70px;
+      z-index: 10;
+      background: rgb(185, 160, 160);
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+     #chartContainer {
+      width: 250px;
+      padding: 10px;
+    }
