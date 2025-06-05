@@ -172,10 +172,15 @@
 
   // Show chart container
   // document.getElementById("pieChart").style.display = "block";
-  document.getElementById("showChartBtn").addEventListener("click", drawMaterialPieChart);
+  //document.getElementById("showChartBtn").addEventListener("click", drawMaterialPieChart);
 
+  document.getElementById("showChartBtn").addEventListener("click", function () {
+    drawMaterialPieChart();
+  });
 
+  
 function drawMaterialPieChart() {
+  document.getElementById("chartContainer").style.display = "block";
   waterNetworkLayer2.queryFeatures({
     where: "material IS NOT NULL",
     outFields: ["material"],
