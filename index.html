@@ -11,12 +11,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://js.arcgis.com/4.32/"></script>
         <link rel ="stylesheet" href="style.css">
 
     </head>
-    <body>
+ <body>
+      <div id="viewDiv"></div>
+
         <div id="dropdown">
           <label for="layerSelect">Render By:</label>
           <select id="layerSelect">
@@ -29,15 +29,18 @@
         <!-- <div id="chartContainer" style="display:none;">
           <canvas id="pieChart" width="200" height="200"></canvas>
         </div> -->
-        <div id="chartContainer" style="position: absolute; bottom: 10px; right: 10px; width: 200px; height: 200px; background: rgb(169, 31, 31); padding: 10px; border-radius: 10px;">
+        <button id="showChartBtn" >
+          Show Chart
+        </button>
+        <div id="chartContainer" >
   <canvas id="materialChart" ></canvas>
 </div>
 
-        <button id="showChartBtn" style="position: absolute; top: 120px; left: 70px; z-index: 1000;">
-  Show Material Chart
-</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-        <div id="viewDiv"></div>
+<script src="https://js.arcgis.com/4.32/"></script>
+
+
         
         <script src="script.js"></script>
 
